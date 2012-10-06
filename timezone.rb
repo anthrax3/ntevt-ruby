@@ -1,0 +1,25 @@
+require 'bit-struct'
+
+class Timezone < BitStruct
+  signed :bias, 4, "Timezone Bias"
+  text   :standard_name, 32, "Standard Name"
+  signed :standard_year, 2, "Standard Year"
+  signed :standard_month, 2, "Standard Month"
+  signed :standard_day_of_week, 2, "Standard Day of Week"
+  signed :standard_day, 2, "Standard Day"
+  signed :standard_hour, 2, "Standard Hour"
+  signed :standard_minute, 2, "Standard Minute"
+  signed :standard_second, 2, "Standard Second"
+  signed :standard_millisecond, 2, "Standard Millisecond"
+  signed :standard_bias, 4, "Standard Bias"
+  text   :daylight_name, 32, "Daylight Name"
+  signed :daylight_year, 2, "Daylight Year"
+  signed :daylight_month, 2, "Daylight Month"
+  signed :daylight_day_of_week, 2, "Daylight Day of Week"
+  signed :daylight_day, 2, "Daylight Day"
+  signed :daylight_hour, 2, "Daylight Hour"
+  signed :daylight_minute, 2, "Daylight Minute"
+  signed :daylight_second, 2, "Daylight Second"
+  signed :daylight_millisecond, 2, "Daylight Millisecond"
+  signed :daylight_bias, 4, "Daylight Bias"
+end
